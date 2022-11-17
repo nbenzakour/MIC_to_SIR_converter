@@ -29,7 +29,6 @@ Running the test example
 
 STANDARD OUTPUT is as follows:
 
-::
 
 	Created output directory...
 	Log info stored in: test_output/logfile.txt
@@ -53,7 +52,6 @@ STANDARD OUTPUT is as follows:
 A log file is also generated, containing the list of antibiotic MICs converted and the breakpoints
 used, according to the scheme supplied (CLSI in this example).
 
-::
 
 	Loading scheme: CLSI
 	Loading screening data: test/MIC_test_data.csv
