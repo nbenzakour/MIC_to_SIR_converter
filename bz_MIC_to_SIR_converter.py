@@ -130,6 +130,7 @@ def convert_MIC(value, lower, upper):
 def load_data(infile):
     # load screening data into dataframe, header changed to lower case
     screen_data = pd.read_csv(infile, encoding="UTF-8")
+    screen_data = screen_data.fillna('ND')
     screen_data.columns = map(str.lower, screen_data.columns)
     return(screen_data)
 
