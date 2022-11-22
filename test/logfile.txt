@@ -1,0 +1,133 @@
+Loading scheme: CLSI
+Loading screening data: test/MIC_test_data.csv
+-------
+ampicillin	 cut-offs are S <= 8.0 and R >= 32.0
+-------
+piperacillin	 not tested
+-------
+mecilinam	 not tested
+-------
+amoxicillin-clavulanate	 cut-offs are S <= [8.0, 4.0] and R >= [32.0, 16.0]
+-------
+ampicillin-sulbactam	 not tested
+-------
+ceftolozane-tazobactam	 not tested
+-------
+ceftdazidim-avibactam	 not tested
+-------
+piperacillin-tazobactam	 cut-offs are S <= [16.0, 2.0] and R >= [128.0, 4.0]
+-------
+ticarcillin-clavulanate	 cut-offs are S <= [16.0, 2.0] and R >= [128.0, 4.0]
+-------
+cefazolin	 cut-offs are S <= 2.0 and R >= 8.0
+-------
+cefazolin (uti)	 not tested
+-------
+ceftaroline	 not tested
+-------
+cefepime	 cut-offs are S <= 2.0 and R >= 16.0
+-------
+cefotaxime	 not tested
+-------
+ceftriaxone	 cut-offs are S <= 1.0 and R >= 4.0
+-------
+cefotetan	 not tested
+-------
+cefoxitin	 cut-offs are S <= 8.0 and R >= 32.0
+-------
+cefuroxime	 not tested
+-------
+ceftazidime	 cut-offs are S <= 4.0 and R >= 16.0
+-------
+cefamandaole	 not tested
+-------
+cefmetazole	 not tested
+-------
+cefonicid	 not tested
+-------
+cefoperazone	 not tested
+-------
+ceftizoxime	 not tested
+-------
+moxalactam	 not tested
+-------
+cefuroxime	 not tested
+-------
+cefixime	 not tested
+-------
+cefpodoxime	 not tested
+-------
+aztreonam	 cut-offs are S <= 4.0 and R >= 16.0
+-------
+doripenem	 not tested
+-------
+ertapenem	 cut-offs are S <= 0.5 and R >= 2.0
+-------
+imipenem	 cut-offs are S <= 1.0 and R >= 4.0
+-------
+meropenem	 cut-offs are S <= 1.0 and R >= 4.0
+-------
+gentamicin	 cut-offs are S <= 4.0 and R >= 16.0
+-------
+tobramycin	 cut-offs are S <= 4.0 and R >= 16.0
+-------
+amikacin	 cut-offs are S <= 16.0 and R >= 64.0
+-------
+kanamycin	 not tested
+-------
+metilmycin	 not tested
+-------
+azithromycin	 not tested
+-------
+tetracycline	 cut-offs are S <= 4.0 and R >= 16.0
+-------
+doxycycline	 not tested
+-------
+minocycline	 not tested
+-------
+ciprofloxacin	 cut-offs are S <= 1.0 and R >= 4.0
+-------
+levofloxacin	 not tested
+-------
+cinoxacin	 not tested
+-------
+enoxacin	 not tested
+-------
+gatifloxacin	 not tested
+-------
+gemifloxacin	 not tested
+-------
+grepafloxacin	 not tested
+-------
+lomefloxacin	 not tested
+-------
+nalidixic acid	 not tested
+-------
+norfloxacin	 cut-offs are S <= 4.0 and R >= 16.0
+-------
+ofloxacin	 not tested
+-------
+fleroxacin	 not tested
+-------
+trimethoprim-sulfamethoxazole	 cut-offs are S <= [2.0, 38.0] and R >= [4.0, 76.0]
+-------
+sulfonamides	 not tested
+-------
+trimethoprim	 cut-offs are S <= 8.0 and R >= 16.0
+-------
+chloramphenicol	 cut-offs are S <= 8.0 and R >= 32.0
+-------
+fosfomycin	 not tested
+-------
+nitrofurantoin	 cut-offs are S <= 32.0 and R >= 128.0
+-------
+Add columns concerning metadata and antibiotics not found in CLSI data
+Retrieving acc number
+Retrieving species
+Retrieving specimen
+Retrieving cephalexin
+Retrieving colistin
+Retrieving fosfomycin w/g6p
+Retrieving tigecycline
+-------
+Writing results to test/MIC-conversion-results_20221122-133750.csv
