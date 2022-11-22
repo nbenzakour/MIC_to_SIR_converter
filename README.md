@@ -13,15 +13,15 @@ Usage
 
 To run this tool, you need to provide the following minimum information: 
 
-	* the file containing the screening data, in .csv format (see the example in the test folder)
-	* the output directory
+* the file containing the screening data, in .csv format (see the example in the test folder)
+* the output directory
     
 You can also specify:
 
-    * the MIC breakpoint convention scheme, either CLSI or EUCAST (default = CLSI_entero_2018)
-    * the position of the column you wish to use as identifier, e.g strain name (default = 3) 
-	* the species of interest: Enterobacteriacae (default) or Saureus (default = Entero)
-	* the output to include a full description with MIC + SIR conversion (default = True)
+* the MIC breakpoint convention scheme, either CLSI or EUCAST (default = CLSI_entero_2018)
+* the position of the column you wish to use as identifier, e.g strain name (default = 3)
+* the species of interest: Enterobacteriacae (default) or Saureus (default = Entero)
+* the output to include a full description with MIC + SIR conversion (default = True)
 
 
 Running the test example
