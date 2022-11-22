@@ -169,6 +169,7 @@ def main():
     df_res = pd.concat([df_res.reset_index(drop=True), df_data[df_data.columns[pos_id]]], axis=1)
 
     # search antibiotics available, iterate through data and convert to SIR into new dataframe
+    print('Searching MICs to convert...')
     for row in df_scheme.itertuples():
         # extract antibiotic, parse sensitive and resistant cut-off values
         ab = row[1].lower()
@@ -189,6 +190,14 @@ def main():
         else:
             logfile.write(ab + '\t not tested' + '\n')
             logfile.write('-------' + '\n')
+    # retrieve and append columns concerning metadata and antibiotics not found in CLSI data
+    logfile.write('Add columns concerning metadata and antibiotics not found in CLSI data\n')
+    print('Retrieving additional metadata...')
+    for col in df_data.columns:
+        if col not in df_res.columns:
+            df_res = pd.concat([df_res, df_data[col]], axis=1)
+            logfile.write('Retrieving ' + col + '\n')
+    logfile.write('-------' + '\n')
 
     # recording time for timestamp
     ts = time.time()
@@ -197,11 +206,13 @@ def main():
     # write results to new csv
     outfile = outdir + '/MIC-conversion-results_' + st + '.csv'
     df_res.to_csv(outfile, index=False)
-    print(df_res)
-    print('Writing results to', outfile)
+    #print(df_res)
 
     # finish logging
-    logfile.write('Writing results to' + outfile)
+    print('Writing results to ' + outfile)
+    print('---------------------------------------------------')
+    print('Thank you for choosing to use MIC_to_SIR_converter!')
+    logfile.write('Writing results to ' + outfile + "\n")
     logfile.close()
 
 
