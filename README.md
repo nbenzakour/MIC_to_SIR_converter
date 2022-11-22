@@ -27,31 +27,17 @@ Running the test example
 
 ```python bz_MIC_to_SIR_converter.py -i test/MIC_test_data.csv -o test_output```
 
-STANDARD OUTPUT is as follows:
 
+Columns are reordered as such:
 
-	Created output directory...
-	Log info stored in: test_output/logfile.txt
-	Loading scheme: CLSI
-	Loading screening data: test/MIC_test_data.csv
-	   poc id ampicillin ampicillin  ... chloramphenicol nitrofurantoin nitrofurantoin
-	0  SYD001        >16          R  ...               S             64              I
-	1  SYD002        >16          R  ...               S           <=32              S
-	2  SYD003        >16          R  ...               S           <=32              S
-	3  SYD004        >16          R  ...               S           <=32              S
-	4  SYD005        >16          R  ...               S           <=32              S
-	5  SYD006         >1          S  ...               S           <=32              S
-	6  SYD007        >16          R  ...               S           <=32              S
-	7  SYD008        >16          R  ...               R           >128              R
-	8  SYD009        >16          R  ...               S           <=32              S
-	9  SYD010        >16          R  ...               S           <=32              S
+* first (MIC and) SIR, ordered according to antibiotics classes
+* then any other metadata (including antibiotics for which there were no conversion data available
+in the scheme chosen, e.g colistin in CLSI)
 
-	[10 rows x 47 columns]
-	Writing results to test_output/MIC-conversion-results_20221117-151809.csv
-	
-A log file is also generated, containing the list of antibiotic MICs converted and the breakpoints
-used, according to the scheme supplied (CLSI in this example).
+A log file is also generated, containing the list of antibiotic MICs converted, the breakpoints
+used, according to the scheme supplied (CLSI in this example), and any other metadata added.
 
+Logfile:
 
 	Loading scheme: CLSI
 	Loading screening data: test/MIC_test_data.csv
